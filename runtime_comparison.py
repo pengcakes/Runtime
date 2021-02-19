@@ -5,6 +5,16 @@ input: functions
 
 output: runtime of functions vs increasingly long inputs
 
+
+TODO LIST:
+
+- write/find a function that can generate test cases filling a .txt
+- input reading function
+- Make the title, axis, and legend say the right thing
+- use a helper func for the graph?
+- improve the graph
+
+
 """
 
 import time, raybeam_questions
@@ -30,6 +40,8 @@ def generate_runtimes(function_list, tests):
             runtime_results.append(run_time)
 
     return runtime_results
+
+
 
 
 
