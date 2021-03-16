@@ -17,6 +17,11 @@ TODO LIST:
 - make it some kind of package I can import at anytime to check runtime.
 
 
+Things to exam runtime:
+- Dynamic Programming fib() recursive vs for loop but storing
+
+
+
 """
 import time, raybeam_questions
 import numpy as np
