@@ -18,7 +18,8 @@ TODO LIST:
 
 
 Things to exam runtime:
-- Dynamic Programming fib() recursive vs for loop but storing
+- Dynamic Programming fib() recursive vs memoization
+- Find prime number from coding questions to review
 
 
 
