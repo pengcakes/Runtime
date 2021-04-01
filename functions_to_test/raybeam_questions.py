@@ -7,6 +7,7 @@ factors(20) = [1,2,4,5,10,20]
 
 """
 import math
+from runtime import *
 
 def find_all_factors_0(number):
     results=[]
@@ -28,6 +29,9 @@ def find_all_factors_1(number):
 
 if __name__ == "__main__":
     print(find_all_factors_1(20))
+    #compare_runtime()
+
+
 
 
 

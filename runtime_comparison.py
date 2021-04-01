@@ -3,11 +3,9 @@ Finally going to have a formal version of this.
 
 input: functions
 
-output: runtime of functions vs increasingly long inputs
-
+output: runtime of functions vs increasingly long inputs displayed in a graph
 
 TODO LIST:
-
 - write/find a function that can generate test cases filling a .txt
 - might be even better to store tests in XML JSON or a learn a new format
 - input reading function
@@ -20,18 +18,17 @@ TODO LIST:
 Things to exam runtime:
 - Dynamic Programming fib() recursive vs memoization
 - Find prime number from coding questions to review
-
-
-
+- firstDuplicate questions. Array vs Hashtable
 """
 import time, raybeam_questions
 import numpy as np
 import math, sys
 from pylab import *
 
-
-# takes functions and tests
-# returns runtimes for each function+test
+"""
+takes functions and tests
+returns runtimes for each function+test
+"""
 def generate_runtimes(function_list, tests):
     runtime_results=[]
     for function in function_list:
@@ -47,7 +44,9 @@ def generate_runtimes(function_list, tests):
 
     return runtime_results
 
-
+"""
+draws graph given runtimes and list of test runs
+"""
 def draw_graph(runtimes, tests):
     style.use('seaborn-whitegrid')
     rcParams['figure.figsize'] = [12, 6]
@@ -64,7 +63,9 @@ def draw_graph(runtimes, tests):
 
     show()
 
-# function to call
+"""
+Final function to use. Calls draw_graph and generate_runtimes.
+"""
 def compare_runtime(function_list, tests):
     runtimes=generate_runtimes(function_list, tests)
     draw_graph(runtimes, tests)
