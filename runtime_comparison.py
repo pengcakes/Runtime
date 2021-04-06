@@ -13,6 +13,7 @@ TODO LIST:
 - use a helper func for the graph?
 - improve the graph
 - make it some kind of package I can import at anytime to check runtime.
+- integrate timeit into this?
 
 
 Things to exam runtime:
