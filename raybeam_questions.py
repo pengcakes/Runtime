@@ -7,7 +7,7 @@ factors(20) = [1,2,4,5,10,20]
 
 """
 import math
-from runtime import *
+#from runtime import *
 
 def find_all_factors_0(number):
     results=[]
