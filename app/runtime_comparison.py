@@ -15,13 +15,12 @@ output: runtime of functions vs increasingly long inputs displayed in a graph
 
 TODO LIST:
 + write/find a function that can generate test cases filling a .txt ***might not need, could just create a list on the spot***
-- might be even better to store tests in XML JSON or a learn a new format
-- input reading function
 + Make the title, axis, and legend say the right thing
 + use a helper func for the graph?
 + improve the graph
 - make it some kind of package I can import at anytime to check runtime. ***need to make it work well before uploading***
 + integrate timeit into this? ***nah***
+- make this work w/ functions that use more than one input --> EDIT generate_runtimes()
 
 
 Things to exam runtime:
@@ -76,13 +75,6 @@ Final function to use. Calls draw_graph and generate_runtimes.
 def compare_runtime(function_list, tests):
     runtimes=generate_runtimes(function_list, tests)
     draw_graph(function_list, runtimes, tests)
-
-
-"""
-test imports
-"""
-def test_func():
-    return print('Hello')
 
 
 if __name__ == "__main__":
